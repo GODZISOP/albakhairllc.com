@@ -1,3 +1,5 @@
+import honeyImg from '../images/royal-sidr-honey.jpg';
+
 export const categories = [
   {
     id: 'home-living',
@@ -282,7 +284,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 138,
     priceNote: 'Export Grade Certified 100% Raw & Halal',
-    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    image: honeyImg,
     link: '#',
     description: 'Unpasteurized, pure monofloral Sidr honey harvested from pristine wild mountain valleys with rich antibacterial properties.',
     longDescription: 'Directly imported from verified highland beekeepers by Smart AI Ventures LLC. Lab-certified purity, high enzymatic activity, and a distinct butterscotch-amber flavor profile favored by gourmet grocers and luxury hospitality suites.',
