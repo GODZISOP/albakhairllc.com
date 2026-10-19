@@ -1,13 +1,13 @@
-# RY Prime Service LLC - Wholesale, General Trading & E-Commerce Website
+# Al Bakhair LLC - Wholesale, General Trading & E-Commerce Website
 
-Official digital catalog and wholesale procurement portal for **RY PRIME SERVICE LLC**.
+Official digital catalog and wholesale procurement portal for **AL BAKHAIR LLC**.
 
 ## 🌟 Overview
-* **Brand:** RY Prime Service LLC
+* **Brand:** Al Bakhair LLC
 * **Tagline:** Premium Wholesale, General Trading & Global Distribution
-* **Website:** https://www.ryprimeservicellc.com
+* **Website:** https://www.albakhairllc.com
 * **Primary Contacts:**
-  * **Email:** info@ryprimeservicellc.com
+  * **Email:** info@albakhairllc.com
   * **Phone / WhatsApp:** (+966) 53 098 7507
   * **Operations:** Global Distribution & Wholesale Trade Hub (Middle East & North America)
 
