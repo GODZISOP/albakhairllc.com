@@ -7,6 +7,7 @@ import {
   LayoutGrid, Sparkles, ChevronDown, Package, Star, Globe
 } from 'lucide-react';
 import { categories, products } from './data/products';
+import { siteConfig } from './data/siteConfig';
 import logoImg from './images/ryprimeservice-logo.svg';
 
 export default function App() {
