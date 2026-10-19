@@ -1,12 +1,13 @@
-# Amy Azlaan LLC - Wholesale, General Trading & E-Commerce Website
+# Smart AI Ventures LLC - Wholesale, General Trading & E-Commerce Website
 
-Official digital catalog and wholesale procurement portal for **AMY AZLAAN LLC**.
+Official digital catalog and wholesale procurement portal for **SMART AI VENTURES LLC**.
 
 ## 🌟 Overview
-* **Brand:** Amy Azlaan LLC
-* **Tagline:** Premium Wholesale, General Trading & Global Distribution
+* **Brand:** Smart AI Ventures LLC
+* **Tagline:** Smart Technology, Wholesale Trading & Global Distribution
+* **Website:** https://www.smartaiventuresllc.com
 * **Primary Contacts:**
-  * **Email:** info@amyazlaanllc.com
+  * **Email:** info@smartaiventuresllc.com
   * **Phone / WhatsApp:** (+966) 53 098 7507
   * **Operations:** Global Distribution & Wholesale Trade Hub (Middle East & North America)
 
