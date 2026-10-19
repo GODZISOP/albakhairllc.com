@@ -1,3 +1,8 @@
+import cookwareImg from '../images/cookware-set.jpg';
+import charcuterieImg from '../images/charcuterie-board.jpg';
+import wirelessChargerImg from '../images/wireless-charging-dock.jpg';
+import honeyImg from '../images/royal-sidr-honey.jpg';
+
 export const categories = [
   {
     id: 'home-kitchen',
@@ -53,7 +58,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 96,
     priceNote: 'Direct Factory & Bulk Wholesale Tier Available',
-    image: 'https://images.unsplash.com/photo-1584990347449-a212328fae9d?auto=format&fit=crop&w=800&q=80',
+    image: cookwareImg,
     link: '#',
     description: 'Professional commercial-grade tri-ply encapsulated induction cookware with brushed ergonomic stay-cool handles and precision laser-etched volume markers.',
     longDescription: 'Curated and distributed by Al Bakhair LLC for fine dining institutions, hospitality venues, and specialty retail stores. Heavy-gauge tri-ply construction combines interior 304 food-grade stainless steel with a high-conductivity aluminum core for rapid, even heat distribution free of hot spots.',
@@ -92,7 +97,7 @@ export const products = [
     rating: 4.9,
     reviewCount: 74,
     priceNote: 'Volume Tier Pricing',
-    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80',
+    image: charcuterieImg,
     link: '#',
     description: 'Hand-crafted dual-surface natural white Carrara marble and sustainable seasoned acacia wood board with brushed brass hanging loop.',
     longDescription: 'Supplied directly by Al Bakhair LLC for luxury tableware retailers and boutique catering companies. The natural cool temperature of the solid Carrara marble keeps cheeses and antipasti fresh, while the organic acacia grain provides a durable cutting surface.',
@@ -244,7 +249,7 @@ export const products = [
     rating: 4.8,
     reviewCount: 95,
     priceNote: 'Volume Tier Pricing',
-    image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80',
+    image: wirelessChargerImg,
     link: '#',
     description: 'Aircraft-grade anodized aluminum folding stand simultaneously rapid-charging Qi smartphone, smartwatch, and wireless earbuds with smart thermal management.',
     longDescription: 'Curated by Al Bakhair LLC for commercial workspaces, hotels, and consumer electronics distributors. The precision magnetic ring locks mobile devices in place in both vertical portrait and horizontal movie modes while preventing overcharging and heat accumulation.',
@@ -282,7 +287,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 168,
     priceNote: 'Direct Producer Wholesale Tier Available',
-    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    image: honeyImg,
     link: '#',
     description: '100% pure unfiltered raw mountain honey harvested from pesticide-free highland flora, naturally rich in active enzymes and golden floral notes.',
     longDescription: 'Directly sourced and laboratory-certified by Al Bakhair LLC. Raw, cold-extracted, unpasteurized honey that preserves its natural pollen grains, antioxidants, and rich floral bouquet, collected from isolated mountain apiaries.',
