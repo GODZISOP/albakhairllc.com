@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { categories, products } from './data/products';
 import { siteConfig } from './data/siteConfig';
-import logoImg from './images/smartaiventures-logo.svg';
+import logoImg from './images/shaikrahmathullah-logo.svg';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -477,13 +477,18 @@ export default function App() {
       {/* VIEW: HOME PAGE */}
       {activeTab === 'home' && (
         <main>
-          {/* HERO SECTION - SHOP WITH DISTINCTION */}
+          {/* HERO SECTION - LUXURY SHAIK RAHMATHULLAH SHOWCASE */}
           <section className="hero-section">
             <div className="hero-overlay"></div>
             <div className="hero-container">
               <div className="hero-content">
-                <div className="hero-pretitle">{siteConfig.legalName}</div>
-                <h1 className="hero-title">Quality Products Online</h1>
+                <div className="hero-eyebrow-badge">
+                  <Sparkles size={14} className="hero-sparkle-icon" />
+                  <span>{siteConfig.eyebrowStandard || 'THE SHAIK RAHMATHULLAH STANDARD'}</span>
+                </div>
+                <h1 className="hero-title">
+                  Quality Products & <span className="hero-title-highlight">Global Wholesale</span>
+                </h1>
                 <p className="hero-description">
                   {siteConfig.heroSubtitle}
                 </p>
@@ -495,7 +500,8 @@ export default function App() {
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }}
                   >
-                    Shop Now
+                    <ShoppingBag size={18} />
+                    <span>Shop Catalog</span>
                   </button>
                   <button 
                     className="btn-hero-outline"
@@ -504,14 +510,57 @@ export default function App() {
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }}
                   >
-                    Explore Categories
+                    <span>Explore Categories</span>
+                    <ArrowRight size={16} />
                   </button>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* SECTION 1: SHOP EVERYDAY ESSENTIALS (EXACT SCREENSHOT LAYOUT) */}
+          {/* LUXURY TRUST & CAPABILITY STRIP */}
+          <section className="hero-trust-ribbon">
+            <div className="hero-trust-container">
+              <div className="trust-ribbon-item">
+                <div className="trust-ribbon-icon">
+                  <Award size={22} />
+                </div>
+                <div>
+                  <div className="trust-ribbon-title">100% Verified Quality</div>
+                  <div className="trust-ribbon-desc">Direct factory sourcing & batch inspection</div>
+                </div>
+              </div>
+              <div className="trust-ribbon-item">
+                <div className="trust-ribbon-icon">
+                  <Layers size={22} />
+                </div>
+                <div>
+                  <div className="trust-ribbon-title">Volume Wholesale Tiers</div>
+                  <div className="trust-ribbon-desc">Competitive pricing for bulk partners</div>
+                </div>
+              </div>
+              <div className="trust-ribbon-item">
+                <div className="trust-ribbon-icon">
+                  <Truck size={22} />
+                </div>
+                <div>
+                  <div className="trust-ribbon-title">Multi-Hub Logistics</div>
+                  <div className="trust-ribbon-desc">Middle East & Global express dispatch</div>
+                </div>
+              </div>
+              <div className="trust-ribbon-item">
+                <div className="trust-ribbon-icon">
+                  <ShieldCheck size={22} />
+                </div>
+                <div>
+                  <div className="trust-ribbon-title">Commercial LLC Registered</div>
+                  <div className="trust-ribbon-desc">Authentic trade assurance & contracts</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 1: SHOP EVERYDAY ESSENTIALS */}
           <section id="categories-section" className="section-wrapper essentials-section">
             <div className="section-header-left">
               <h2 className="section-heading-clean">Shop Everyday Essentials</h2>
@@ -523,7 +572,7 @@ export default function App() {
                   key={cat.id} 
                   className="category-card-clean"
                   onClick={() => {
-                    if (cat.link) {
+                    if (cat.link && cat.link !== '#') {
                       window.open(cat.link, '_blank', 'noopener,noreferrer');
                     } else {
                       handleCategoryClick(cat.id);
@@ -537,33 +586,22 @@ export default function App() {
                       className="category-img-clean" 
                       loading="lazy"
                     />
+                    <span className="category-count-badge">{cat.itemCount || 2} Items</span>
                   </div>
                   <div className="category-meta-clean">
                     <h3 className="category-name-clean">{cat.name}</h3>
-                    <a 
-                      href={cat.link || '#'}
-                      target={cat.link ? '_blank' : undefined}
-                      rel={cat.link ? 'noopener noreferrer' : undefined}
-                      className="category-link-clean"
-                      onClick={(e) => {
-                        if (!cat.link) {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          handleCategoryClick(cat.id);
-                        } else {
-                          e.stopPropagation();
-                        }
-                      }}
-                    >
-                      {cat.buttonText}
-                    </a>
+                    <p className="category-desc-preview">{cat.description}</p>
+                    <span className="category-link-clean">
+                      <span>{cat.buttonText}</span>
+                      <ArrowRight size={14} />
+                    </span>
                   </div>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* SECTION 2: FEATURED PRODUCTS (EXACT SCREENSHOT LAYOUT) */}
+          {/* SECTION 2: FEATURED PRODUCTS */}
           <section id="featured-products-section" className="section-wrapper featured-section">
             <div className="section-header-center">
               <h2 className="section-heading-clean" style={{ textAlign: 'center' }}>Featured Products</h2>
@@ -577,13 +615,26 @@ export default function App() {
                     onClick={() => viewProductDetail(prod)}
                   >
                     <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" />
+                    <span className="card-badge-stock">{prod.availability ? 'In Stock' : 'Ready'}</span>
+                    <span className="card-badge-sku">{prod.sku}</span>
                   </div>
                   <div className="clean-product-body">
+                    <div className="card-category-pill">{prod.categoryName}</div>
                     <h3 className="clean-product-title" onClick={() => viewProductDetail(prod)}>
                       {prod.name}
                     </h3>
-                    <div className="clean-product-price">
-                      {prod.price}
+                    <div className="card-rating-row">
+                      <div className="card-stars">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                        ))}
+                      </div>
+                      <span className="card-rating-num">{prod.rating.toFixed(1)}</span>
+                      <span className="card-reviews-num">({prod.reviewCount})</span>
+                    </div>
+                    <div className="card-price-row">
+                      <span className="clean-product-price">{prod.price}</span>
+                      <span className="card-price-tier">Wholesale tier</span>
                     </div>
                     <button 
                       className="btn-clean-add-cart"
@@ -592,7 +643,8 @@ export default function App() {
                         addToCart(prod, 1, true);
                       }}
                     >
-                      Add to cart
+                      <ShoppingBag size={16} />
+                      <span>Add to Cart</span>
                     </button>
                   </div>
                 </div>
@@ -1033,16 +1085,26 @@ export default function App() {
                     onClick={() => viewProductDetail(prod)}
                   >
                     <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" />
+                    <span className="card-badge-stock">{prod.availability ? 'In Stock' : 'Ready'}</span>
+                    <span className="card-badge-sku">{prod.sku}</span>
                   </div>
                   <div className="clean-product-body">
-                    <div style={{ fontSize: '0.75rem', fontWeight: '700', color: '#c59b27', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>
-                      {prod.categoryName}
-                    </div>
+                    <div className="card-category-pill">{prod.categoryName}</div>
                     <h3 className="clean-product-title" onClick={() => viewProductDetail(prod)}>
                       {prod.name}
                     </h3>
-                    <div className="clean-product-price">
-                      {prod.price}
+                    <div className="card-rating-row">
+                      <div className="card-stars">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                        ))}
+                      </div>
+                      <span className="card-rating-num">{prod.rating.toFixed(1)}</span>
+                      <span className="card-reviews-num">({prod.reviewCount})</span>
+                    </div>
+                    <div className="card-price-row">
+                      <span className="clean-product-price">{prod.price}</span>
+                      <span className="card-price-tier">Wholesale tier</span>
                     </div>
                     <button 
                       className="btn-clean-add-cart"
@@ -1051,7 +1113,8 @@ export default function App() {
                         addToCart(prod, 1, true);
                       }}
                     >
-                      Add to cart
+                      <ShoppingBag size={16} />
+                      <span>Add to Cart</span>
                     </button>
                   </div>
                 </div>
@@ -1759,8 +1822,8 @@ export default function App() {
                     <Globe size={20} color="var(--accent-teal)" />
                     <div>
                       <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Official Website</div>
-                      <a href={`https://${(siteConfig.website || 'smartaiventuresllc.com').replace(/^https?:\/\//, '')}`} target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
-                        {siteConfig.website || 'www.smartaiventuresllc.com'}
+                      <a href={`https://${(siteConfig.website || 'shaikrahmathullahllc.com').replace(/^https?:\/\//, '')}`} target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
+                        {siteConfig.website || 'www.shaikrahmathullahllc.com'}
                       </a>
                     </div>
                   </div>

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-navy: #09172a;
-  --secondary-teal: #132a48;
-  --accent-teal: #0284c7;
-  --accent-teal-hover: #0369a1;
-  --accent-brown: #0284c7;
-  --accent-brown-hover: #0369a1;
+  --primary-navy: #091526;
+  --secondary-teal: #112a45;
+  --accent-teal: #d97706;
+  --accent-teal-hover: #b45309;
+  --accent-brown: #d97706;
+  --accent-brown-hover: #b45309;
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fef3c7;
   --bg-light: #f8fafc;
   --bg-card: #ffffff;
   --text-dark: #0f172a;
@@ -684,12 +686,14 @@ body {
   }
 }
 
-/* HERO SECTION - EXACT REPLICA OF ATTACHED SCREENSHOT */
+/* ==========================================================================
+   HERO SECTION - LUXURY SHAIK RAHMATHULLAH SHOWCASE
+   ========================================================================== */
 .hero-section {
   position: relative;
-  min-height: 520px;
-  background-color: #0d2837;
-  background-image: url('https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=2200&q=85');
+  min-height: 540px;
+  background-color: #091526;
+  background-image: radial-gradient(circle at 80% 25%, rgba(217, 119, 6, 0.18) 0%, transparent 55%), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2200&q=85');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -700,50 +704,86 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,
-      rgba(28, 20, 13, 0.90) 0%, rgba(36, 27, 20, 0.76) 45%, rgba(46, 35, 26, 0.52) 100%);
-  backdrop-filter: brightness(0.9);
+  background: linear-gradient(135deg, 
+    rgba(9, 21, 38, 0.94) 0%, 
+    rgba(17, 42, 69, 0.88) 55%, 
+    rgba(9, 21, 38, 0.72) 100%);
+  backdrop-filter: blur(1.5px);
 }
 
 .hero-container {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 60px 32px;
+  padding: 65px 32px 55px;
   width: 100%;
 }
 
 .hero-content {
-  max-width: 720px;
+  max-width: 760px;
+}
+
+.hero-eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
+}
+
+.hero-sparkle-icon {
+  color: #fbbf24;
+  animation: sparklePulse 2s infinite ease-in-out;
+}
+
+@keyframes sparklePulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
 }
 
 .hero-pretitle {
-  color: #e2e8f0;
+  color: #cbd5e1;
   font-size: 0.92rem;
   letter-spacing: 0.05em;
   margin-bottom: 12px;
-  font-weight: 500;
-  opacity: 0.9;
+  font-weight: 600;
 }
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: 3.25rem;
+  font-size: 3.4rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.15;
   margin-bottom: 20px;
-  letter-spacing: -0.01em;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.015em;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title-highlight {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .hero-description {
-  color: #d1dbe5;
-  font-size: 0.96rem;
-  line-height: 1.65;
-  margin-bottom: 30px;
+  color: #e2e8f0;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 34px;
   max-width: 680px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description strong {
@@ -759,42 +799,122 @@ body {
 }
 
 .btn-hero-primary {
-  background: var(--accent-teal);
-  background: linear-gradient(135deg, var(--accent-teal-hover) 0%, var(--accent-teal) 100%);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
   color: #ffffff;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 13px 32px;
   border-radius: 40px;
-  border: none;
+  border: 1px solid rgba(251, 191, 36, 0.4);
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 15px rgba(140, 95, 36, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.35);
 }
 
 .btn-hero-primary:hover {
-  background: #754e1c;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(182, 133, 46, 0.45);
+  box-shadow: 0 10px 28px rgba(217, 119, 6, 0.5);
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 50%, #92400e 100%);
 }
 
 .btn-hero-outline {
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
   font-weight: 600;
-  font-size: 0.95rem;
-  padding: 12px 28px;
+  font-size: 0.96rem;
+  padding: 13px 28px;
   border-radius: 40px;
-  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-hero-outline:hover {
   background: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
+  border-color: #fbbf24;
+  color: #fbbf24;
   transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   LUXURY TRUST & CAPABILITY STRIP (UNDER HERO)
+   ========================================================================== */
+.hero-trust-ribbon {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(9, 21, 38, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.hero-trust-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 22px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.trust-ribbon-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trust-ribbon-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 1px solid #fde68a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d97706;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.12);
+}
+
+.trust-ribbon-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.trust-ribbon-desc {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+  .hero-trust-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-trust-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+  .hero-title {
+    font-size: 2.3rem;
+  }
 }
 
 /* SECTION COMMON STYLES */
@@ -839,25 +959,32 @@ body {
 }
 
 .category-card-clean {
-  background: transparent;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 20px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  transition: transform 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(9, 21, 38, 0.04);
+  position: relative;
 }
 
 .category-card-clean:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 16px 36px -8px rgba(9, 21, 38, 0.12), 0 0 0 1px rgba(217, 119, 6, 0.15);
 }
 
 .category-img-container {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
   background: #f1f5f9;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
 }
 
 .category-img-clean {
@@ -865,12 +992,27 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 18px;
-  transition: transform 0.45s ease;
+  border-radius: 14px;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .category-card-clean:hover .category-img-clean {
-  transform: scale(1.05);
+  transform: scale(1.06);
+}
+
+.category-count-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(9, 21, 38, 0.85);
+  backdrop-filter: blur(6px);
+  color: #fbbf24;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(251, 191, 36, 0.3);
 }
 
 .category-meta-clean {
@@ -878,71 +1020,91 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 6px;
   text-align: left;
 }
 
 .category-name-clean {
   font-size: 1.05rem;
-  font-weight: 600;
-  color: #111827;
+  font-weight: 700;
+  color: #0f172a;
   margin: 0;
   line-height: 1.3;
 }
 
+.category-desc-preview {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.45;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .category-link-clean {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #111827;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-teal);
   background: transparent;
   border: none;
-  padding: 0;
+  padding: 4px 0 0;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .category-card-clean:hover .category-link-clean {
-  color: var(--accent-teal);
+  color: #b45309;
+  transform: translateX(4px);
 }
 
 /* ==========================================================================
-   EXACT SCREENSHOT LAYOUT: FEATURED PRODUCTS (4-CARD GRID)
+   FEATURED PRODUCTS (LUXURY CARD SYSTEM)
    ========================================================================== */
 .featured-section {
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .featured-grid-four {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
 
 .clean-product-card {
-  background: transparent;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: 20px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  transition: transform 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(9, 21, 38, 0.04);
+  position: relative;
 }
 
 .clean-product-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 18px 38px -8px rgba(9, 21, 38, 0.12), 0 0 0 1px rgba(217, 119, 6, 0.15);
 }
 
 .clean-product-img-wrap {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
-  background: #f1f5f9;
+  background: #f8fafc;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
 }
 
 .clean-product-img {
@@ -950,12 +1112,42 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 18px;
-  transition: transform 0.45s ease;
+  border-radius: 14px;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .clean-product-card:hover .clean-product-img {
-  transform: scale(1.05);
+  transform: scale(1.06);
+}
+
+.card-badge-stock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(16, 185, 129, 0.92);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.card-badge-sku {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(9, 21, 38, 0.85);
+  backdrop-filter: blur(4px);
+  color: #e2e8f0;
+  font-size: 0.68rem;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .clean-product-body {
@@ -967,46 +1159,108 @@ body {
   flex: 1;
 }
 
+.card-category-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
 .clean-product-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #111827;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
   margin: 0 0 6px 0;
   cursor: pointer;
   line-height: 1.35;
   transition: color 0.2s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.7em;
 }
 
 .clean-product-title:hover {
   color: var(--accent-teal);
 }
 
-.clean-product-price {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #475569;
+.card-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+}
+
+.card-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card-rating-num {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.card-reviews-num {
+  color: #94a3b8;
+  font-size: 0.76rem;
+}
+
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 14px;
+  padding-top: 4px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.clean-product-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #091526;
+  margin: 0;
+}
+
+.card-price-tier {
+  font-size: 0.72rem;
+  color: #059669;
+  font-weight: 600;
+  background: #ecfdf5;
+  padding: 2px 7px;
+  border-radius: 4px;
 }
 
 .btn-clean-add-cart {
-  border: 1.5px solid #111827;
-  background: #ffffff;
-  color: #111827;
-  border-radius: 6px;
-  padding: 8px 18px;
-  font-size: 0.88rem;
-  font-weight: 500;
+  width: 100%;
+  border: 1px solid #091526;
+  background: #091526;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(9, 21, 38, 0.1);
 }
 
 .btn-clean-add-cart:hover {
-  background: #111827;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  border-color: #d97706;
   color: #ffffff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.35);
 }
 
 /* Centered Shop All Products Pill Button */
