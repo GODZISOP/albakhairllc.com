@@ -1,13 +1,13 @@
-# Shaik Rahmathullah LLC - Wholesale, General Trading & E-Commerce Website
+# RY Prime Service LLC - Wholesale, General Trading & E-Commerce Website
 
-Official digital catalog and wholesale procurement portal for **SHAIK RAHMATHULLAH LLC**.
+Official digital catalog and wholesale procurement portal for **RY PRIME SERVICE LLC**.
 
 ## 🌟 Overview
-* **Brand:** Shaik Rahmathullah LLC
+* **Brand:** RY Prime Service LLC
 * **Tagline:** Premium Wholesale, General Trading & Global Distribution
-* **Website:** https://www.shaikrahmathullahllc.com
+* **Website:** https://www.ryprimeservicellc.com
 * **Primary Contacts:**
-  * **Email:** info@shaikrahmathullahllc.com
+  * **Email:** info@ryprimeservicellc.com
   * **Phone / WhatsApp:** (+966) 53 098 7507
   * **Operations:** Global Distribution & Wholesale Trade Hub (Middle East & North America)
 

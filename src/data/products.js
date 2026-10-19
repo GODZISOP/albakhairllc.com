@@ -58,7 +58,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Whisper-quiet ceramic ultrasonic aroma diffuser with warm ambient LED illumination, dual mist modes, and automatic safety shut-off.',
-    longDescription: 'Curated and distributed by Shaik Rahmathullah LLC for boutique lifestyle retailers and wellness spaces. Hand-finished matte ceramic stoneware casing with ultra-fine cold-vapor atomization to preserve essential oil integrity across rooms up to 450 sq. ft.',
+    longDescription: 'Curated and distributed by RY Prime Service LLC for boutique lifestyle retailers and wellness spaces. Hand-finished matte ceramic stoneware casing with ultra-fine cold-vapor atomization to preserve essential oil integrity across rooms up to 450 sq. ft.',
     features: [
       'Hand-crafted artisan ceramic cover with whisper-quiet ultrasonic atomization (<20dB)',
       'Dual continuous and intermittent mist settings with 10-hour uninterrupted runtime',
@@ -97,7 +97,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Brushed brass finish task lamp with full-spectrum eye-care illumination, 5 warmth presets, and integrated 15W Qi fast wireless charging.',
-    longDescription: 'Supplied directly by Shaik Rahmathullah LLC for modern corporate workstations and executive suites. Built with a weighted anti-tip base, smooth touch-slide dimming, memory function, zero blue-light hazard certification, and dual-axis folding hinges.',
+    longDescription: 'Supplied directly by RY Prime Service LLC for modern corporate workstations and executive suites. Built with a weighted anti-tip base, smooth touch-slide dimming, memory function, zero blue-light hazard certification, and dual-axis folding hinges.',
     features: [
       'Full-spectrum LED panel delivers CRI > 95 natural daylight simulation',
       'Built-in 15W Qi fast wireless charging pad + additional 5V/2A USB-A output port',
@@ -135,7 +135,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Regal oriental fragrance with top notes of saffron and Calabrian bergamot, heart of aged Cambodian agarwood, and a velvety ambergris base.',
-    longDescription: 'Handcrafted and batch-matured under the highest artisanal fragrance standards for Shaik Rahmathullah LLC. A long-lasting 28% Extrait concentration designed for high-end boutique perfumeries and discerning retailers worldwide, presented in an embossed luxury gift box.',
+    longDescription: 'Handcrafted and batch-matured under the highest artisanal fragrance standards for RY Prime Service LLC. A long-lasting 28% Extrait concentration designed for high-end boutique perfumeries and discerning retailers worldwide, presented in an embossed luxury gift box.',
     features: [
       '28% Extrait de Parfum concentration delivering 16+ hours of lasting sillage',
       'Masterfully blended with natural aged Cambodian oud, amber resin, and wild roses',
@@ -173,7 +173,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Clinical dermatological formulation combining 5 bio-identical peptides, squalane, and triple molecular hyaluronic acid for intensive barrier repair.',
-    longDescription: 'Formulated for clinical skincare distributors and beauty retailers under Shaik Rahmathullah LLC standards. Dermatologist-tested, non-comedogenic, and 100% cruelty-free formulation packaged in airless luxury glass dispensers to preserve active ingredient stability.',
+    longDescription: 'Formulated for clinical skincare distributors and beauty retailers under RY Prime Service LLC standards. Dermatologist-tested, non-comedogenic, and 100% cruelty-free formulation packaged in airless luxury glass dispensers to preserve active ingredient stability.',
     features: [
       'Bio-identical 5-Ceramide complex (EOP, NS, NP, AS, AP) repairs damaged skin barriers',
       'Botanical olive squalane and 5% niacinamide reduce redness and even skin tone',
@@ -211,7 +211,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Studio-grade acoustic clarity with hybrid active noise cancellation, custom 40mm titanium drivers, and 45-hour continuous playback.',
-    longDescription: 'Curated and distributed globally by Shaik Rahmathullah LLC. Built with dual transparency mode, spatial audio head tracking, Bluetooth 5.3 multi-point streaming, and memory-foam ear cushions wrapped in breathable protein leather for unmatched acoustic comfort.',
+    longDescription: 'Curated and distributed globally by RY Prime Service LLC. Built with dual transparency mode, spatial audio head tracking, Bluetooth 5.3 multi-point streaming, and memory-foam ear cushions wrapped in breathable protein leather for unmatched acoustic comfort.',
     features: [
       'Hybrid ANC with 6 dedicated feedforward/feedback mics cancels up to 42dB ambient noise',
       'Titanium-coated 40mm acoustic drivers deliver crystalline highs and punchy bass depth',
@@ -249,7 +249,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'High-speed Gallium Nitride (GaN III) power hub capable of charging laptops, tablets, and phones simultaneously with smart dynamic power routing.',
-    longDescription: 'Sourced by Shaik Rahmathullah LLC for tech distributors and corporate bulk orders. 50% smaller than standard chargers, featuring multi-point thermal safeguards, foldaway prongs, and international travel voltage compatibility (100-240V).',
+    longDescription: 'Sourced by RY Prime Service LLC for tech distributors and corporate bulk orders. 50% smaller than standard chargers, featuring multi-point thermal safeguards, foldaway prongs, and international travel voltage compatibility (100-240V).',
     features: [
       'Next-generation Gallium Nitride (GaN III) architecture operates 30% cooler',
       '100W single port max output charges 16" laptops to 50% in just 30 minutes',
@@ -287,7 +287,7 @@ export const products = [
     image: honeyImg,
     link: '#',
     description: 'Unfiltered monofloral raw mountain Sidr honey harvested from pristine wild highlands, rich in active natural enzymes and rich caramel notes.',
-    longDescription: 'Procured direct from certified highland apiaries by Shaik Rahmathullah LLC. Laboratory-verified 100% pure raw honey packaged in gold-foil embossed hexagonal glass jars with an included handcrafted wooden honey dipper.',
+    longDescription: 'Procured direct from certified highland apiaries by RY Prime Service LLC. Laboratory-verified 100% pure raw honey packaged in gold-foil embossed hexagonal glass jars with an included handcrafted wooden honey dipper.',
     features: [
       '100% pure raw unheated mountain Sidr honey with zero additive sugars',
       'Abundant in natural enzymes, antioxidants, and immune-supporting bio-nutrients',
@@ -325,7 +325,7 @@ export const products = [
     image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
     link: '#',
     description: 'Single-estate first cold mechanical extraction with ultra-low acidity (<0.2%), delicate herbal notes, and a peppery polyphenol finish.',
-    longDescription: 'Brought directly to commercial gourmet grocers and fine dining establishments by Shaik Rahmathullah LLC. Harvested by hand within 24 hours of pressing, bottled in UV-protective dark Marasca glass with an integrated anti-drip pour spout.',
+    longDescription: 'Brought directly to commercial gourmet grocers and fine dining establishments by RY Prime Service LLC. Harvested by hand within 24 hours of pressing, bottled in UV-protective dark Marasca glass with an integrated anti-drip pour spout.',
     features: [
       'First cold mechanical extraction under 24°C preserves delicate polyphenols',
       'Certified ultra-low acidity (<0.2%) ranking in the top international EVOO grade',
